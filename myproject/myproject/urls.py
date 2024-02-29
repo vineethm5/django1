@@ -20,5 +20,5 @@ from myproject.views import funs
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',funs),
+    path("",include("myapp.urls")),
 ]
